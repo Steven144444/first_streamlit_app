@@ -75,3 +75,4 @@ if st.button('Add a Fruit Load List'):
   back_from_function = insert_row_snowflake(add_my_fruit)
   my_cnx.close()
   st.text(back_from_function)
+ 
