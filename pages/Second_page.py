@@ -9,11 +9,9 @@ st.title("Test curl command")
 matillion = 'curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev'
 cmd = '''curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev'''
 
-c = webbrowser.get('chrome')
-
 if st.button('Click to run the FIRST MAIN JOB'):
   #requests.post("http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev")
-  c.open_new_tab('https://documentation.matillion.com/docs/')
+  webbrowser.open_new_tab('http://docs.python.org/')
 #   subprocess.call([
 #     'curl',
 #     '-X',
