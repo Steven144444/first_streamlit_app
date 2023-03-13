@@ -10,6 +10,7 @@ cmd = '''curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/g
 
 if st.button('Click to run the FIRST MAIN JOB'):
   x = requests.get("http://51.103.32.188/rest/v1")
+  print(x)
   
 #   subprocess.call([
 #     'curl',
@@ -24,4 +25,4 @@ if st.button('Click to run the FIRST MAIN JOB'):
 #   args = shlex.split(cmd)
 #   process=subprocess.Popen(args, shell=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 #   stdout, stderr = process.communicate()
-print(x)
+
