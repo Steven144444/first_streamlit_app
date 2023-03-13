@@ -10,7 +10,7 @@ cmd = '''curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/g
 
 if st.button('Click to run the MAIN JOB'):
   x = requests.get('http://51.103.32.188/rest/v1', auth = ('azure-user', 'azure-user'))
-  st.text(x)
+  st.text(x.status_code)
   
 #   subprocess.call([
 #     'curl',
