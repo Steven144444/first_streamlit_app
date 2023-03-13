@@ -8,6 +8,7 @@ matillion = 'curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/
 cmd = '''curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev'''
 
 if st.button('Click to run the MAIN JOB'):
+  subprocess.run(curl -X POST -u azure-user:azure-user -k 'http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev')
 #   subprocess.call([:
 #     'curl',
 #     '-X',
@@ -17,7 +18,7 @@ if st.button('Click to run the MAIN JOB'):
 #     '-k',
 #     'http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev'
 #     ])
-  args = shlex.split(cmd)
-  process=subprocess.Popen(args, shell=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-  stdout, stderr = process.communicate()
+#   args = shlex.split(cmd)
+#   process=subprocess.Popen(args, shell=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#   stdout, stderr = process.communicate()
 
