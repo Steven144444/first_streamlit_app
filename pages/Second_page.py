@@ -9,7 +9,7 @@ matillion = 'curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/
 cmd = '''curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev'''
 
 if st.button('Click to run the MAIN JOB'):
-  x = requests.get('https://w3schools.com')
+  x = requests.get('http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/task/id/44442', auth = ('azure-user', 'azure-user'))
   st.text(x.text)
   
 #   subprocess.call([
