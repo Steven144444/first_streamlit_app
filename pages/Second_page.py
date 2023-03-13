@@ -4,6 +4,8 @@ import webbrowser
 import subprocess
 import shlex
 
+st.title("Test curl command")
+
 matillion = 'curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev'
 cmd = '''curl -X POST -u azure-user:azure-user -k http://51.103.32.188/rest/v1/group/name/smensah/project/name/yelp/version/name/default/job/name/1bis-New_data_ingestion/run?environmentName=dev'''
 
